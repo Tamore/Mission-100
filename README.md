@@ -1,5 +1,7 @@
 # Mission 100 | Trading Terminal
 
+> 🚧 **Work In Progress**: This project is currently in active production/development. Some links (like the Google Forms waitlist) may be placeholders until final launch.
+
 An institutional-grade landing page and dashboard built to document the public trading challenge of turning $100 into $1,000,000. Designed with a premium, dark-mode aesthetic featuring dynamic glassmorphism, responsive data visualization, and seamless mobile pacing.
 
 ## 🚀 Features
