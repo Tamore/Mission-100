@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mission 100 | Trading Terminal
 
-## Getting Started
+An institutional-grade landing page and dashboard built to document the public trading challenge of turning $100 into $1,000,000. Designed with a premium, dark-mode aesthetic featuring dynamic glassmorphism, responsive data visualization, and seamless mobile pacing.
 
-First, run the development server:
+## 🚀 Features
 
+- **Equity Curve Terminal**: A custom, responsive dashboard widget displaying live trading metrics (Win Rate, Max Drawdown, Active Session Time) using smooth SVG graph integration.
+- **Mobile-First Carousel**: Student Results and testimonials optimized into a native, swipeable horizontal carousel for mobile devices, falling back to a clean grid on desktop.
+- **Live Video Integration**: Dedicated section to seamlessly direct users to live YouTube trading sessions with custom, high-fidelity play overlays.
+- **Priority Waitlist**: Optimized lead-capture flow linked to external Google Forms to eliminate backend complexity and database overhead.
+- **Premium Aesthetics**: Next-generation UI utilizing Framer Motion for scroll-triggered micro-animations, custom tokens, and a dynamically generated favicon (`next/og`).
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Language**: TypeScript
+
+## 💻 Getting Started
+
+First, install the dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, run the development server:
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the live site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚙️ Configuration
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To update waitlist links, social links, or live status dates, modify the configuration object inside:
+`src/config/site.ts`
