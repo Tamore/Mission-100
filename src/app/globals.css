@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #0A0A0A;
+  --color-surface: #141414;
+  --color-surface-container: #1a1a1a;
+  --color-surface-container-high: #232323;
+  --color-surface-container-lowest: #050505;
+  
+  --color-gold: #D4AF37;
+  --color-gold-hover: #F4D35E;
+  
+  --color-primary: #D4AF37;
+  --color-on-primary: #0A0A0A;
+  --color-primary-container: rgba(212, 175, 55, 0.2);
+  
+  --color-on-background: #F5F5F5;
+  --color-on-surface: #F5F5F5;
+  --color-on-surface-variant: #A1A1AA;
+  
+  --color-border: #2A2A2A;
+  --color-outline-variant: rgba(255, 255, 255, 0.1);
+  
+  --color-success: #4ADE80;
+  --color-negative: #EF4444;
+  --color-error: #EF4444;
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-jakarta), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Custom spacings */
+  --spacing-margin-mobile: 16px;
+  --spacing-margin-desktop: 64px;
+  --spacing-gutter: 24px;
+  --spacing-container-max: 1440px;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-on-background);
+    overflow-x: hidden;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(26, 26, 26, 0.7);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .glass-edge {
+    border-image: linear-gradient(to bottom, rgba(255,255,255,0.15), rgba(255,255,255,0.05)) 1;
+  }
+  .glow-gold {
+    filter: drop-shadow(0 0 10px rgba(212, 175, 55, 0.3));
+  }
+  .bloom-line {
+    box-shadow: 0 0 8px currentColor;
+  }
+  .faceted-bull {
+    mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  }
+  .terminal-scanline {
+    background: linear-gradient(to bottom, transparent 50%, rgba(0,0,0,0.1) 50%);
+    background-size: 100% 4px;
+    pointer-events: none;
+  }
+}
+
+/* Animations */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
